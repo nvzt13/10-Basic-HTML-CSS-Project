@@ -1,3 +1,3 @@
 # PROJECT IMAGE
 
-<img src="./ss.png">
+<img src="./images/ss.png">
