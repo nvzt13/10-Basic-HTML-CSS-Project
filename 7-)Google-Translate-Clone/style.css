@@ -1,0 +1,154 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+body{
+    margin: 0
+}
+.header{
+    height: 48px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.header .left h3{
+    height: 24px;
+    width: 150px;
+    margin: 0 15px;
+    font-size: 22px;
+}
+.header .left a{
+    font-size: 24px;
+    padding: 10px;
+}
+.header .right{
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+.header .right a{
+    margin: 8px;
+}
+.header .right a i{
+    margin: 8px;
+    font-size: 30px;
+}
+
+
+/*------------------------------Header___And--------------------
+*/
+.subheader{
+    display: flex;
+    justify-content: space-between;  
+    width: 70%;  
+    margin-left: auto;
+    margin-right: auto;
+}
+.subheader .leftheader{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.subheader .rightheader{
+    display: flex;
+    flex-direction:column;
+    align-items: end;
+}
+.subheader ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:0px;
+}
+.subheader ul li{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius:5px;
+    margin: 0 15px;
+}
+input{
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+}
+.title ul{
+    display: flex;
+}
+.title ul li{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+.footer a i{
+    font-size: 34px;
+    margin: 0 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/*_________________________________@media_________________________*/
+@media screen and (max-width:1230px) {
+    .title ul li{
+        border: 1px solid black;
+        padding: 7px;
+        margin: 10px;
+    }
+    .subheader{
+     flex-direction:column;
+    }
+    .subheader ul li{
+     border: 1px solid black;
+     padding: 7px;
+     border-radius:5px;
+     margin: 0 10px;
+ }
+ .subheader .rightheader{
+    align-items:start;
+}
+.subheader .leftheader{
+    align-items:start;
+}
+
+ }
+
+ @media screen and (max-width:768px) {
+    .title ul li{
+        border: 1px solid black;
+        padding: 0px;
+        margin: 5px;
+    }
+    .subheader ul li{
+        border: 1px solid black;
+        padding: 3px;
+        border-radius:5px;
+        margin: 0 3px;
+    }
+    .subheader .rightheader{
+        align-items:end;
+    }
+    .subheader .leftheader{
+        align-items:end;
+    }
+    .header .right a i{
+        margin: 8px;
+        font-size: 18px;
+    }
+    
+ }
