@@ -1,1 +1,3 @@
-<h1>Basic HTML-CSS Projects</h1>
+<h1>project image</h1>
+
+<img src="./ss.png">
