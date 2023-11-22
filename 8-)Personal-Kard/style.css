@@ -10,6 +10,10 @@ body{
   background-color: grey;
 }
 .main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   max-width: 370px;
   width: 100%;
   background:#DAC7C7;
@@ -17,18 +21,39 @@ body{
   padding: 25px;
   box-shadow: 0 5 10 rgba(0, 0 , 0, 0.1)
 }
-.row-1{
+.image {
+  display: flex;
+  flex-direction: column;
   position: relative;
   height: 160px;
   width: 160px;
   background-color: rgba(124, 86, 176, 1);
   padding: 3px;
   border-radius: 50%;
+  margin-bottom: 15px;
 }
-.row-1 img{
+.image img{
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid#D7B3B3
+}
+.main .text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.text .name{
+  font-size: 22px;
+  font-weight: 600;
+}
+.text .job{
+  font-size: 15px;
+  font-weight: 400;
+}
+.main .media-buttons{
+  display: flex;
+  flex-direction: column;
 }
