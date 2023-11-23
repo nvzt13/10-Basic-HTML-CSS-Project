@@ -20,7 +20,7 @@ body{
   background:#DAC7C7;
   border-radius: 24px;
   padding: 25px;
-  box-shadow: 0 5 10 rgba(0, 0 , 0, 0.1);
+  box-shadow: 0 5 10 rgba(248, 248, 248, 0.1);
   position: relative;
 }
 .main::before{
@@ -29,7 +29,7 @@ body{
   top:0;
   height:36%;
   width: 100%;
-  background-color: rgba(155, 163, 252, 1);
+  background-color: rgb(95, 107, 241);
   border-radius: 24px 24px 0 0;
 }
 .image {
@@ -38,7 +38,7 @@ body{
   position: relative;
   height: 150px;
   width: 150px;
-  background-color: rgba(124, 86, 176, 1);
+  background-color: rgb(2, 0, 0);
   padding: 3px;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -48,7 +48,7 @@ body{
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid#D7B3B3
+  border: 3px solid #fff;
 }
 .main .text{
   display: flex;
@@ -57,11 +57,13 @@ body{
   margin-bottom: 10px;
 }
 .text .name{
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
 }
 .text .job{
-  font-size: 15px;
+  font-size: 26px;
   font-weight: 400;
 }
 .main .media-buttons{
@@ -78,7 +80,11 @@ body{
   width: 34px;
   border-radius: 50%;
   margin: 0 8px;
-  background-color: #515EF0;
+  color: #fff;
+  text-decoration: none;
+}
+.media-buttons a{
+  text-decoration: none;
 }
 .main .buttons{
   display: flex;
@@ -92,11 +98,12 @@ body{
   border-radius: 25px;
   margin:0 10px;
   padding: 8px 24px;
-  background: rgba(29, 46, 229, 1);
+  background: rgb(201, 60, 60);
+  color: #fff;
   transition:all 0.3 ease;
 }
 .buttons button:hover{
-  background:rgba(155, 163, 252, 1)
+  background:rgb(17, 123, 223)
 }
 .main .analitics{
   display: flex;
@@ -107,7 +114,7 @@ body{
   display: flex;
   align-items: center;
   padding: 0 20px;
-  border-right: 2px solid black;
+  border-right: 2px solid rgb(65, 46, 46);
 }
 .data i{
   font-size: 18px;
