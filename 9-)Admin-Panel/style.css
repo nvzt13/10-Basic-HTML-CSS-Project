@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid red;
 }
 body{
     min-height: 100vh;
@@ -24,4 +25,25 @@ h2{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+.side-menu .brand-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-menu li{
+    font-size: 24px;
+    padding:10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.side-menu li img{
+    width: 30px;
+    height: 30px;
+}
+.side-menu li:hover{
+    background: white;
+    color: tomato;
 }
