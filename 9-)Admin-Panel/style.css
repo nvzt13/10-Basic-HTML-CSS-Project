@@ -18,6 +18,18 @@ h1,
 h2{
     color: black;
 }
+.btn{
+  background :rgba(102, 115, 255, 1);
+  color: rgba(255, 208, 198, 0.57);
+  padding: 5px 10px;
+  text-align: center;
+}
+.btn:hover{
+  background:rgba(198, 209, 255, 0.57);
+  color:white;
+  padding: 3px 8px;
+  border:2px solid red;
+}
 .side-menu{
     position: fixed;
     background-color: tomato;
@@ -97,5 +109,4 @@ h2{
 }
 .container .header .nav .user{
   flex: 1;
-  background: hotpink;
 }
