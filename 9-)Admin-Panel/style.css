@@ -17,17 +17,28 @@ h1,
 h2{
     color: black;
 }
+h3{
+  color: #999;
+}
 .btn{
-  background :rgba(102, 115, 255, 1);
-  color: rgba(255, 208, 198, 0.57);
+  background :tomato;
+  color: #fff;
   padding: 5px 10px;
   text-align: center;
+  border-radius: 5px;
 }
 .btn:hover{
   background:rgba(198, 209, 255, 0.57);
   color:white;
   padding: 3px 8px;
   border:2px solid red;
+}
+.title{
+  display:flex ;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 10px;
+  border-bottom: 2px solid #999;
 }
 .side-menu{
     position: fixed;
@@ -153,4 +164,24 @@ h2{
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .content .content-2{
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.container .content .content-2 .recent-payments{
+  min-height: 50vh;
+  flex: 5;
+  background: white;
+  margin: 0 25px 25px 25px;
+}
+.container .content .content-2 .new-students{
+  flex: 2;
+  background: white;
+  min-height: 50vh;
+  margin: 0 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
