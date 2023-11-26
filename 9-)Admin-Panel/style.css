@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: 1px solid red;
 }
 body{
     min-height: 100vh;
@@ -90,9 +89,10 @@ h2{
 }
 .container .header .nav .search input[type=text]{
   border: none;
-  background: hsla(311, 68%, 38%, 1);
+  background: #fff;
   padding: 10px;
   width: 50%;
+  border-radius: 5px;
 }
 .container .header .nav .search button{
   width: 40px;
