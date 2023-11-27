@@ -42,13 +42,20 @@ h3{
 }
 table{
   padding: 10px;
+}
 
-}
-th,
-td{
-  text-align: left;
+tr,
+th{
+  text-align: center;
   padding: 8px;
+  margin: 10px;
 }
+/*_______________________________global end______________________ */
+
+
+/*______________________________side-*menu________________________*/
+
+
 .side-menu{
     position: fixed;
     background-color: tomato;
@@ -64,7 +71,7 @@ td{
     justify-content: center;
 }
 .side-menu li{
-  font-size: 18px;
+  font-size: 24px;
   padding:10px 40px;
     color: white;
     display: flex;
@@ -79,6 +86,12 @@ td{
     background: white;
     color: tomato;
 }
+
+/*______________________________side-*menu end_________________*/
+
+/*______________________________container________________________*/
+
+
 .container{
   position: absolute;
   right: 0;
@@ -97,6 +110,7 @@ td{
   align-items: center;
   justify-content: center;
   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 .container .header .nav{
   width: 90%;
@@ -155,6 +169,8 @@ td{
   position: relative;
   margin-top: 10vh;
   min-height: 90vh;
+
+  background-color: #f1f1f1
 }
 
 .container .content .cards{
@@ -186,6 +202,8 @@ td{
   flex: 5;
   background: white;
   margin: 0 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
 }
 .container .content .content-2 .new-students{
   flex: 2;
@@ -193,4 +211,50 @@ td{
   min-height: 50vh;
   margin: 0 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+.container .content .content-2 .new-students table td img{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+/*______________________________Media________________________*/
+
+
+@media screen and (max-width:1050px) {
+    .side-menu li{
+      font-size: 18px;
+    }
+}
+@media screen and (max-width:940px){
+  .side-menu li span{
+    display:none;
+  }
+  .side-menu {
+    align-items: center;
+  }
+  .side-menu li img{
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width:536px){
+  .brand-name h1{
+
+    font-size: 16px;
+  }
+  .container .content .cards{
+    justify-content: center;
+  }
+  .side-menu li img{
+    width: 30px;
+    height: 30px;
+  }
+  .container .content .content-2 .recent-payments table th:nth-child(2),
+  .container .content .content-2 .recent-payments table td:nth-child(2){
+    display: none;
+  }
 }
