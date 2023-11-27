@@ -40,6 +40,15 @@ h3{
   padding: 15px 10px;
   border-bottom: 2px solid #999;
 }
+table{
+  padding: 10px;
+
+}
+th,
+td{
+  text-align: left;
+  padding: 8px;
+}
 .side-menu{
     position: fixed;
     background-color: tomato;
