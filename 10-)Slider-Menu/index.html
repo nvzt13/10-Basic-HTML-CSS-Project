@@ -1,63 +1,94 @@
-<!-- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <title></title>
+    <style>
+        .swiper {
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: 500px;
+        }
+    </style>
 </head>
-<style>
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-</style>
 
 <body>
-
-<section class="slider-container">
-  <div class="swiper card_slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="img-box">
-          <img src="./images/car1.jpg" alt="../images/car1.jpg">
-        </div>
-      </div>
-         <div class="swiper-slide">
-        <div class="img-box">
-          <img src="./images/car2.jpg" alt="../images/car1.jpg">
-        </div>
-      </div>
-         <div class="swiper-slide">
-           <div class="img-box">
-             <img src="./images/car3.jpg" alt="../images/car1.jpg">
-           </div>
-         </div>
-            <div class="swiper-slide">
-              <div class="img-box">
-                <img src="./images/car4.jpg" alt="../images/car1.jpg">
-              </div>
-            </div>
-               <div class="swiper-slide">
-                 <div class="img-box">
-                   <img src="./images/car1.jpg" alt="../images/car1.jpg">
-                 </div>
-               </div>
-                  <div class="swiper-slide">
-                    <div class="img-box">
-                      <img src="./images/car5.jpg" alt="../images/car1.jpg">
+    <section class="slider-container">
+        <div class="container">
+            <div class="swiper card_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="imege-box">
+                            <img src="./images/car1.jpg" alt="">
+                        </div>
                     </div>
-                  </div>
-    </div>
-  </div>
-</section>
+                    <div class="swiper-slide">
+                        <div class="imege-box">
+                            <img src="./images/car2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imege-box">
+                            <img src="./images/car3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imege-box">
+                            <img src="./images/car4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imege-box">
+                            <img src="./images/car5.jpg" alt="">
+                        </div>
+                    </div>
 
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+        var swiper = new Swiper('.card_slider', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 
-</html> -->
+</html>
